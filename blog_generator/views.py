@@ -15,7 +15,6 @@ from pytube.exceptions import RegexMatchError, VideoUnavailable
 
 
 ASSEMBLYAI_API_KEY = 'e923464c9bc74edab43a336ddadb093d'
-os.environ["API_KEY"] = 'AIzaSyBY2MR2Pud5feT-DI8IX4p5a11U4P4dKF8'
 aai.settings.api_key = ASSEMBLYAI_API_KEY
 genai.configure(api_key=os.getenv("API_KEY"))
 model = genai.GenerativeModel('gemini-pro')
