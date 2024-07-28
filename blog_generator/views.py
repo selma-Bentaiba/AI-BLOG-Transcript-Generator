@@ -12,7 +12,9 @@ import assemblyai as aai
 from .models import BlogPost
 import google.generativeai as genai
 from pytube.exceptions import RegexMatchError, VideoUnavailable
+from dotenv import load_dotenv
 
+load_dotenv()
 
 ASSEMBLYAI_API_KEY = 'e923464c9bc74edab43a336ddadb093d'
 aai.settings.api_key = ASSEMBLYAI_API_KEY
